@@ -18,8 +18,8 @@ const Icon = function(props) {
 
     return (
         <svg
-            width={size}
-            height={size}
+            width={size * 1.2}
+            height={size * 0.8}
             {...rest}
             viewBox="0 0 32 32"
         >

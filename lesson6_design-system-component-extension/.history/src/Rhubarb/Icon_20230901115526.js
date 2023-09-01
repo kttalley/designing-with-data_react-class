@@ -8,11 +8,8 @@ const Icon = function(props) {
     const Drawing = IconMap[name] ? IconMap[name] : null;
     const iconStyles = {
         ...(context === 'btn' && {
-            marginRight: '200px',
-            color: "red",
-            padding: '8px',
-            size: '500px'
-            
+            marginRight: '10px',
+            padding: '8px'
         }),
     }
 

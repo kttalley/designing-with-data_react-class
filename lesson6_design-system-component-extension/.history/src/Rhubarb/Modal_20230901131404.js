@@ -28,8 +28,7 @@ const ModalContainer = styled.div`
   margin-right: auto;
   border-radius: 8px;
   overflow: auto;
-  border: 2px solid ${color.pink};
-  box-shadow: 0px 10px 20px rgba(0,0,0,0.6)
+  border: 0.1px solid ${color.pink}
 `;
 
 const ModalHeader = styled.div`

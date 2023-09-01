@@ -26,7 +26,7 @@ export const DocsModalContainer = styled.section`
   height: 300px;
   border-radius: 8px;
   padding: 1rem;
-  background: ${color.darkGreen}
+  background: ${color.black}
 `;
 
 export const DocsCodeBlock = styled.code`

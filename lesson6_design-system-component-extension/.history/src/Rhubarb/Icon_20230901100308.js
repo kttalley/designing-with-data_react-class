@@ -4,17 +4,8 @@ import Styled, { css } from 'styled-components'
 
 
 const Icon = function(props) {
-    const {name, context, color="white", size=16, ...rest} = props;
+    const {name, color="white", size=16, ...rest} = props;
     const Drawing = IconMap[name] ? IconMap[name] : null;
-    const iconStyles = {
-        ...(context === 'btn' && {
-            marginRight: '200px',
-            color: "red",
-            padding: '8px',
-            size: '500px'
-            
-        }),
-    }
 
     return (
         <svg
@@ -25,9 +16,7 @@ const Icon = function(props) {
         >
             <Drawing color={color} />
         </svg>
-        
     );
-    
 }
 
 function Add(props) {
@@ -48,7 +37,11 @@ function Cancel(props) {
     )
 };
 
-
+${props => props.context === 'btn' && css`
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+  ` }
 
 
 const IconMap = {

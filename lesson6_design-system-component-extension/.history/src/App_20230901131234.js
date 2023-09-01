@@ -8,6 +8,7 @@ import {
   Modal,
   fontSize,
   color,
+  ModalWithOverlay,
 } from './Rhubarb';
 
 class App extends Component {
@@ -82,7 +83,9 @@ class App extends Component {
             <Modal header="Header">
               Modal Body
             </Modal>
-            
+            <ModalWithOverlay header="Header">
+              Modal Body
+            </ModalWithOverlay>
          </DocsModalContainer>
          <DocsCodeBlock>
             {` // Modal without Overlay

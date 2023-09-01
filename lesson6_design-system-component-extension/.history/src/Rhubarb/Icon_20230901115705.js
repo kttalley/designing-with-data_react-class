@@ -12,7 +12,6 @@ const Icon = function(props) {
             color: "red",
             padding: '8px',
             size: '500px'
-            
         }),
     }
 

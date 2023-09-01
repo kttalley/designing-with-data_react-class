@@ -67,31 +67,12 @@ class App extends Component {
           <Btn size="sm">Submit</Btn>
           <Btn>Submit</Btn>
           <Btn size="lg">Submit</Btn>
-           <DocsCodeBlock>
-            {`<Btn size="sm"> ... </Btn>
-            <Btn> ... </Btn>
-            <Btn size="lg"> ... </Btn>
-            `}
-          </DocsCodeBlock>
         </DocsSection>
         
 
         <DocsSection>
-          <h2>Modals</h2>
-         <DocsModalContainer>
-            <Modal header="Header">
-              Modal Body
-            </Modal>
-            
-         </DocsModalContainer>
-         <DocsCodeBlock>
-            {` // Modal without Overlay
-              <Modal header="..."> ... </Modal>
-
-              // Modal with Overlay
-              <ModalWithOverlay header="..."> ... </ModalWithOverlay>
-            `}
-          </DocsCodeBlock>
+          <h3>Modals</h3>
+          <Modal color="pink"><h1>hello</h1></Modal>
 
         </DocsSection>
       </div>

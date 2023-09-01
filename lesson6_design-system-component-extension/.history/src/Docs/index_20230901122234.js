@@ -24,13 +24,12 @@ export const DocsSection = styled.section`
 export const DocsModalContainer = styled.section`
   position: relative;
   height: 300px;
-  border-radius: 8px;
-  padding: 1rem;
-  background: ${color.darkGreen}
+  border-radius: 3px;
+  background: ${color.dui_gray80}
 `;
 
 export const DocsCodeBlock = styled.code`
-  border: 1px solid ${color.darkGreen};
+  border: 2px solid ${color.darkGreen};
   background-color: ${color.black};
   color: ${color.dui_gray20};
   border-radius: 8px;

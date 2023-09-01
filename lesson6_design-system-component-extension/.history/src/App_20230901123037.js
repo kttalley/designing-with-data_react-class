@@ -77,21 +77,8 @@ class App extends Component {
         
 
         <DocsSection>
-          <h2>Modals</h2>
-         <DocsModalContainer>
-            <Modal header="Header">
-              Modal Body
-            </Modal>
-            
-         </DocsModalContainer>
-         <DocsCodeBlock>
-            {` // Modal without Overlay
-              <Modal header="..."> ... </Modal>
-
-              // Modal with Overlay
-              <ModalWithOverlay header="..."> ... </ModalWithOverlay>
-            `}
-          </DocsCodeBlock>
+          <h3>Modals</h3>
+          <Modal color="dui_gray8\60"><h1>hello</h1></Modal>
 
         </DocsSection>
       </div>

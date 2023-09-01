@@ -20,6 +20,7 @@ const Icon = function(props) {
         <svg
             width={size}
             height={size}
+            margin="200px"
             {...rest}
             viewBox="0 0 32 32"
         >

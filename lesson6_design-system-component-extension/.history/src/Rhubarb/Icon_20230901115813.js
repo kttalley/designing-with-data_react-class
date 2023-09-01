@@ -12,7 +12,7 @@ const Icon = function(props) {
             color: "red",
             padding: '8px',
             size: '500px'
-            
+
         }),
     }
 
@@ -22,6 +22,7 @@ const Icon = function(props) {
             height={size}
             {...rest}
             viewBox="0 0 32 32"
+            marginRight=""
         >
             <Drawing color={color} />
         </svg>

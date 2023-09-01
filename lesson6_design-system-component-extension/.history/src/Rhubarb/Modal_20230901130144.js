@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Icon from './Icon';
 
 const ModalOverlay = styled.div`
-  background-color: ${color.dui_gray80};
+  background-color: ${color.black};
   position: fixed;
   right: 0;
   left: 0;
@@ -28,22 +28,17 @@ const ModalContainer = styled.div`
   margin-right: auto;
   border-radius: 8px;
   overflow: auto;
-  border: 2px solid ${color.pink};
-  box-shadow: 0px 10px 20px rgba(0,0,0,0.6)
 `;
 
 const ModalHeader = styled.div`
-  border-bottom: 1px solid ${color.pink};
-  padding: ${space[3] + 'px'};
-  display: flex;
-  justify-content: space-between;
+  border-bottom: 1px solid ${color.dui_gray20};
+  padding: ${space[2] + 'px'};
   font-weight: bold;
   font-size:${fontSize[1]};
 `;
 
 const ModalBody = styled.div`
-  padding: ${space[5] + 'px'}
-
+  padding: ${space[6] + 'px'}
 `;
 
 
@@ -66,7 +61,7 @@ export const Modal = function(props) {
           { props.header }
         </span>
         {/* <ModalDismissIcon onClick={ props.onDismiss } name="remove" size={20} fill={color.white} /> */}
-        <Icon name="pin" onClick={ props.onDismiss} size={18}></Icon>
+        <Icon name="cancel"></Icon>
       </ModalHeader>
       <ModalBody>
         { props.children }

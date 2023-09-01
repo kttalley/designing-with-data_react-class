@@ -9,10 +9,7 @@ const Icon = function(props) {
     const iconStyles = {
         ...(context === 'btn' && {
             marginRight: '200px',
-            color: "red",
-            padding: '8px',
-            size: '500px'
-            
+            padding: '8px'
         }),
     }
 

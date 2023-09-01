@@ -18,30 +18,27 @@ background-color: ${ props => color[props.color] ? color[props.color] : color.bl
 
 export const DocsSection = styled.section`
   margin: 100px 32px;
-  max-width: 782px;
+  max-width: 832px;
 `;
 
 export const DocsModalContainer = styled.section`
   position: relative;
   height: 300px;
-  border-radius: 8px;
-  padding: 1rem;
-  background: ${color.darkGreen}
+  border-radius: 3px;
+  background: ${color.dui_gray80}
 `;
 
 export const DocsCodeBlock = styled.code`
-  border: 1px solid ${color.darkGreen};
-  background-color: ${color.black};
-  color: ${color.dui_gray20};
+  border: 2px solid ${color.dui_gray20};
+  color: ${color.dui_gray60}
   border-radius: 8px;
   display: block;
   font-family: consolas, monospace;
   line-height: 1.3;
-  padding: ${space[3] + 'px'};
+  padding: ${space[1] + 'px'};
   white-space: pre-line;
   font-size: ${fontSize[1]};
   margin-top: ${space[3] + 'px'};
-   max-width: 832px;
   transition: 0.15s color ease;
 
   &::selection {

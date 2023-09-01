@@ -19,6 +19,8 @@ background-color: ${ props => color[props.color] ? color[props.color] : color.bl
 export const DocsSection = styled.section`
   margin: 100px 32px;
   max-width: 782px;
+  background: ${color.black}
+  padding: 1rem;
 `;
 
 export const DocsModalContainer = styled.section`
@@ -26,7 +28,7 @@ export const DocsModalContainer = styled.section`
   height: 300px;
   border-radius: 8px;
   padding: 1rem;
-  background: ${color.darkGreen}
+  background: ${color.dui_gray80}
 `;
 
 export const DocsCodeBlock = styled.code`

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Icon from './Icon';
 
 const ModalOverlay = styled.div`
-  background-color: ${color.dui_gray80};
+  background-color: ${color.dui_gray20};
   position: fixed;
   right: 0;
   left: 0;
@@ -16,7 +16,7 @@ const ModalOverlay = styled.div`
 `;
 
 const ModalContainer = styled.div`
-  background-color: ${color.black};
+  background-color: ${color.dui_gray60};
   margin: 0 auto;
   position: absolute:
   top: 75px;
@@ -28,26 +28,21 @@ const ModalContainer = styled.div`
   margin-right: auto;
   border-radius: 8px;
   overflow: auto;
-  border: 2px solid ${color.pink};
-  box-shadow: 0px 10px 20px rgba(0,0,0,0.6)
 `;
 
 const ModalHeader = styled.div`
-  border-bottom: 1px solid ${color.pink};
-  padding: ${space[3] + 'px'};
-  display: flex;
-  justify-content: space-between;
+  border-bottom: 1px solid ${color.dui_gray80};
+  padding: ${space[2] + 'px'};
   font-weight: bold;
   font-size:${fontSize[1]};
 `;
 
 const ModalBody = styled.div`
-  padding: ${space[5] + 'px'}
-
+  padding: ${space[2] + 'px'}
 `;
 
 
-const ModalDismissIcon = styled.div`
+const ModalDismissIcon = styled(Icon)`
   float: right;
   transition: 0.2s opacity easy;
   cursor: pointer;
@@ -65,22 +60,9 @@ export const Modal = function(props) {
         <span>
           { props.header }
         </span>
-        {/* <ModalDismissIcon onClick={ props.onDismiss } name="remove" size={20} fill={color.white} /> */}
-        <Icon name="pin" onClick={ props.onDismiss} size={18}></Icon>
+        <ModalDismissIcon onClick={ props.onDismiss } name="remove" size={20} fill={color.white} />
       </ModalHeader>
-      <ModalBody>
-        { props.children }
-      </ModalBody>
     </ModalContainer>
-  )
-};
-
-
-export const ModalWithOverlay = function(props) {
-  return (
-    <ModalOverlay>
-      <Modal {...props} />
-    </ModalOverlay>
-  )
-};
+  );
+}
 

@@ -28,8 +28,6 @@ const ModalContainer = styled.div`
   margin-right: auto;
   border-radius: 8px;
   overflow: auto;
-  border: 2px solid ${color.pink};
-  box-shadow: 0px 10px 20px rgba(0,0,0,0.6)
 `;
 
 const ModalHeader = styled.div`
@@ -66,7 +64,7 @@ export const Modal = function(props) {
           { props.header }
         </span>
         {/* <ModalDismissIcon onClick={ props.onDismiss } name="remove" size={20} fill={color.white} /> */}
-        <Icon name="pin" onClick={ props.onDismiss} size={18}></Icon>
+        <Icon name="cancel" onClick={ props.onDismiss}></Icon>
       </ModalHeader>
       <ModalBody>
         { props.children }

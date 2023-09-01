@@ -82,7 +82,6 @@ class App extends Component {
             <Modal header="Header">
               Modal Body
             </Modal>
-            
          </DocsModalContainer>
          <DocsCodeBlock>
             {` // Modal without Overlay
