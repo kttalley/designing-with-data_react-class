@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: menlo, sans-serif;
-    background-color: #121212;
+    background-color: #000;
     color: white;
   }
 `;

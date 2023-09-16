@@ -2,9 +2,9 @@ import { color, space, isDarkBackground, fontSize} from './Utils';
 import styled, { css } from 'styled-components';
 
 export const Btn = styled.button`
-  background-color: ${ props => color[props.color] ? color[props.color] : color.black };
-  color: ${props => isDarkBackground(props.color) ? color.black : color.white};
-  outline: 1px solid ${ props => color[props.color] ? color[props.color] : color.darkGreen };
+  background-color: ${ props => props.color ? props.color : color.black};
+  color: ${props => isDarkBackground(props.color) ? color.white : color.dui.text};
+  outline: 1px solid ${ props => props.color ? props.color : color.dui.text };
   border-radius: 8px;
   padding: ${space[3] + 'px'};
   margin: ${space[2] + 'px'};

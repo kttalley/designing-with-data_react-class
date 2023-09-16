@@ -21,18 +21,20 @@ class App extends Component {
         </DocsSection>
         <DocsSection>
           <h2>Colors</h2>
-          <DocsColorBox color="darkGreen">darkGreen</DocsColorBox>
-          <DocsColorBox color="lightGreen">lightGreen</DocsColorBox>
-          <DocsColorBox color="tan">tan</DocsColorBox>
-          <DocsColorBox color="teal">teal</DocsColorBox>
-          <DocsColorBox color="pink">pink</DocsColorBox>
-          <DocsColorBox color="black">black</DocsColorBox>
-          <DocsColorBox color="dui_gray80">dui_gray80</DocsColorBox>
-          <DocsColorBox color="dui_gray60">dui_gray60</DocsColorBox>
-          <DocsColorBox color="dui_gray20">dui_gray20</DocsColorBox>
+          <DocsColorBox color={color.primary.dark}>Primary dark</DocsColorBox>
+          <DocsColorBox color={color.primary.light}>primary light</DocsColorBox>
+          <DocsColorBox color={color.secondary.dark}>sec. dark</DocsColorBox>
+          <DocsColorBox color={color.secondary.light}>sec. light</DocsColorBox>
+          <DocsColorBox color={color.accent.dark}>accent dark</DocsColorBox>
+          <DocsColorBox color={color.accent.light}>accent light</DocsColorBox>
+          <DocsColorBox color={color.dui.background}>dui bg</DocsColorBox>
+          <DocsColorBox color={color.gray.g1}>g1</DocsColorBox>
+          <DocsColorBox color={color.gray.g2}>g2</DocsColorBox>
+          <DocsColorBox color={color.gray.g3}>g3</DocsColorBox>
           <DocsColorBox color="white">white</DocsColorBox>
+          <DocsColorBox color={color.black}>black</DocsColorBox>
+          <DocsColorBox >no props</DocsColorBox>
         </DocsSection>
-
         <DocsSection>
           <h2>Buttons</h2>
           <h3>Button styles</h3>
@@ -40,14 +42,14 @@ class App extends Component {
             <Icon name="add" context="btn" color="#ffffff" size={fontSize[3]}></Icon>
             Join game   
           </Btn>
-          <Btn color="lightGreen">Continue</Btn>
-          <Btn color="white"  roundness="pill">Copy</Btn>
-          <Btn color="teal"  roundness="pill">Ok</Btn>
-          <Btn color="pink"  roundness="pill">Cancel</Btn>
+          <Btn color={color.primary.dark}>Continue</Btn>
+          <Btn roundness="pill" color={color.secondary.dark}>Copy</Btn>
+          <Btn color={color.secondary.light}  roundness="pill">Ok</Btn>
+          <Btn color={color.accent.dark}  roundness="pill">Cancel</Btn>
           <Btn roundness="pill">
             <Icon name="pin" size={fontSize[3]} />
           </Btn>
-          <Btn roundness="pill" color="tan">
+          <Btn roundness="pill" color={color.lui.text}>
             <Icon name="add" size={fontSize[3]} />
           </Btn>
           <Btn color="dui_gray20" roundness="pill">
@@ -78,12 +80,12 @@ class App extends Component {
 
         <DocsSection>
           <h2>Modals</h2>
-         <DocsModalContainer>
+         <DocsModalContainer color={color.accent.dark}>
             <Modal header="Header">
               Modal Body
             </Modal>
             
-         </DocsModalContainer>
+         </DocsModalContainer >
          <DocsCodeBlock>
             {` // Modal without Overlay
               <Modal header="..."> ... </Modal>

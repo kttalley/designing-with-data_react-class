@@ -23,7 +23,8 @@ const ModalContainer = styled.div`
   bottom: 75px;
   left: 0;
   right: 0;
-  width: 500px;
+  width: 80%;
+  max-width: 624px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 8px;
